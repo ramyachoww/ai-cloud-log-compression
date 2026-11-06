@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+/* ========================================================================= */
+/* CLOUD OPTIMA THEME ARCHITECTURE: DARK & LIGHT PALETTES                    */
+/* ========================================================================= */
+
+/* Smooth transitions when switching themes */
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 1. DARK THEME (DEFAULT)                                                  */
+/* ------------------------------------------------------------------------- */
+html.dark,
+body.dark,
+.theme-dark {
+  color-scheme: dark;
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 2. LIGHT THEME (HIGH READABILITY & ANTI-GLARE DAYLIGHT ANALYSIS)         */
+/* ------------------------------------------------------------------------- */
+html.light,
+body.light,
+.theme-light {
+  color-scheme: light;
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
+}
+
+/* Base canvas overrides for Light Mode */
+.theme-light .min-h-screen.bg-slate-950,
+.theme-light main.bg-slate-950,
+.theme-light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+/* Sidebar & Header in Light Mode */
+.theme-light aside,
+.theme-light aside.bg-slate-950\/95,
+.theme-light header,
+.theme-light header.bg-slate-950\/80 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Primary Card Panels in Light Mode */
+.theme-light .bg-slate-900,
+.theme-light .bg-slate-900\/95,
+.theme-light .bg-slate-900\/90,
+.theme-light .bg-slate-900\/80,
+.theme-light .bg-slate-900\/70,
+.theme-light .bg-slate-900\/60 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+/* Secondary/Inner Wells and Sub-containers in Light Mode */
+.theme-light .bg-slate-850,
+.theme-light .bg-slate-800,
+.theme-light .bg-slate-800\/90,
+.theme-light .bg-slate-800\/80,
+.theme-light .bg-slate-800\/60,
+.theme-light .bg-slate-800\/40,
+.theme-light .bg-slate-950\/60,
+.theme-light .bg-slate-950\/40,
+.theme-light .bg-slate-950\/30 {
+  background-color: #f1f5f9 !important; /* slate-100 */
+  border-color: #e2e8f0 !important;
+}
+
+/* Subtle Borders in Light Mode */
+.theme-light .border-slate-800,
+.theme-light .border-slate-800\/90,
+.theme-light .border-slate-800\/80,
+.theme-light .border-slate-800\/60,
+.theme-light .border-slate-800\/50,
+.theme-light .border-slate-700,
+.theme-light .border-slate-700\/60 {
+  border-color: #e2e8f0 !important;
+}
+
+.theme-light .divide-slate-800\/60 > * + *,
+.theme-light .divide-slate-800 > * + * {
+  border-color: #e2e8f0 !important;
+}
+
+/* Typography Overrides for Light Mode */
+.theme-light .text-white {
+  color: #0f172a !important; /* slate-900 */
+}
+
+.theme-light .text-slate-200,
+.theme-light .text-slate-300 {
+  color: #1e293b !important; /* slate-800 */
+}
+
+.theme-light .text-slate-400 {
+  color: #475569 !important; /* slate-600 */
+}
+
+.theme-light .text-slate-500 {
+  color: #64748b !important; /* slate-500 */
+}
+
+.theme-light .text-slate-600 {
+  color: #94a3b8 !important; /* slate-400 */
+}
+
+/* Interactive Hover States in Light Mode */
+.theme-light .hover\:bg-slate-850:hover,
+.theme-light .hover\:bg-slate-800:hover,
+.theme-light .hover\:bg-slate-750:hover,
+.theme-light .hover\:bg-slate-900\/80:hover {
+  background-color: #e2e8f0 !important;
+}
+
+.theme-light .hover\:text-white:hover {
+  color: #020617 !important;
+}
+
+/* Inputs, Dropdowns & Code Blocks in Light Mode */
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Badges & Chips Adjustment in Light Mode */
+.theme-light .bg-slate-950.border.border-slate-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light .bg-cyan-950,
+.theme-light .bg-cyan-950\/60,
+.theme-light .bg-cyan-950\/40,
+.theme-light .bg-cyan-950\/30,
+.theme-light .bg-cyan-950\/25,
+.theme-light .bg-cyan-950\/20 {
+  background-color: #ecfeff !important; /* cyan-50 */
+}
+
+.theme-light .text-cyan-400,
+.theme-light .text-cyan-300 {
+  color: #0891b2 !important; /* cyan-600 */
+}
+
+.theme-light .border-cyan-800,
+.theme-light .border-cyan-800\/60,
+.theme-light .border-cyan-800\/40 {
+  border-color: #a5f3fc !important; /* cyan-200 */
+}
+
+.theme-light .bg-emerald-950,
+.theme-light .bg-emerald-950\/60,
+.theme-light .bg-emerald-950\/40,
+.theme-light .bg-emerald-950\/30,
+.theme-light .bg-emerald-950\/20 {
+  background-color: #f0fdf4 !important; /* emerald-50 */
+}
+
+.theme-light .text-emerald-400,
+.theme-light .text-emerald-300 {
+  color: #059669 !important; /* emerald-600 */
+}
+
+.theme-light .border-emerald-800,
+.theme-light .border-emerald-800\/60,
+.theme-light .border-emerald-800\/40 {
+  border-color: #a7f3d0 !important; /* emerald-200 */
+}
+
+.theme-light .bg-amber-950,
+.theme-light .bg-amber-950\/60,
+.theme-light .bg-amber-950\/40 {
+  background-color: #fffbeb !important; /* amber-50 */
+}
+
+.theme-light .text-amber-400,
+.theme-light .text-amber-300 {
+  color: #d97706 !important; /* amber-600 */
+}
+
+.theme-light .border-amber-800 {
+  border-color: #fde68a !important; /* amber-200 */
+}
+
+.theme-light .bg-indigo-950,
+.theme-light .bg-indigo-950\/60,
+.theme-light .bg-indigo-950\/40,
+.theme-light .bg-purple-950,
+.theme-light .bg-purple-950\/60 {
+  background-color: #f5f3ff !important; /* purple-50 */
+}
+
+.theme-light .text-indigo-400,
+.theme-light .text-indigo-300,
+.theme-light .text-purple-400,
+.theme-light .text-purple-300 {
+  color: #7c3aed !important; /* purple-600 */
+}
+
+/* Modals backdrop & container in Light Mode */
+.theme-light .bg-slate-950\/80 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* Code & Telemetry viewer pre blocks */
+.theme-light pre,
+.theme-light code {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Footer in Light Mode */
+.theme-light footer {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI-Based Cloud Log File Compression System",
+  "description": "Intelligent cloud log file compression system featuring AI template extraction, semantic deduplication, anomaly preservation, and multi-tier benchmark analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
