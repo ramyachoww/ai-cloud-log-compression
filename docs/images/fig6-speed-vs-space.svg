@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <text x="480" y="38" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="700">Fig. 6: Compression &amp; Decompression Throughput (MB/s)</text>
+  <text x="480" y="60" text-anchor="middle" fill="#8b949e" font-size="12">Zstandard delivers industry-leading decompression throughput exceeding 1.98 GB/s (1,985 MB/s)</text>
+
+  <!-- Legend -->
+  <g transform="translate(560, 85)">
+    <rect x="0" y="0" width="14" height="12" rx="2" fill="#388bfd"/>
+    <text x="20" y="10" fill="#c9d1d9" font-size="11">Comp (Logs)</text>
+    <rect x="100" y="0" width="14" height="12" rx="2" fill="#d29922"/>
+    <text x="120" y="10" fill="#c9d1d9" font-size="11">Comp (Activity)</text>
+    <rect x="220" y="0" width="14" height="12" rx="2" fill="#3fb950"/>
+    <text x="240" y="10" fill="#c9d1d9" font-size="11">Decomp (Logs)</text>
+  </g>
+
+  <!-- Chart Area -->
+  <g transform="translate(70, 110)">
+    <!-- Grid lines (0 to 2000 MB/s) -->
+    <line x1="0" y1="0" x2="820" y2="0" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="4" text-anchor="end" fill="#8b949e" font-size="11">2,000</text>
+
+    <line x1="0" y1="70" x2="820" y2="70" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="74" text-anchor="end" fill="#8b949e" font-size="11">1,500</text>
+
+    <line x1="0" y1="140" x2="820" y2="140" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="144" text-anchor="end" fill="#8b949e" font-size="11">1,000</text>
+
+    <line x1="0" y1="210" x2="820" y2="210" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="214" text-anchor="end" fill="#8b949e" font-size="11">500</text>
+
+    <line x1="0" y1="280" x2="820" y2="280" stroke="#8b949e" stroke-width="1.5"/>
+    <text x="-12" y="284" text-anchor="end" fill="#8b949e" font-size="11">0</text>
+    <text x="-40" y="140" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="600" transform="rotate(-90, -40, 140)">Throughput (MB/s)</text>
+
+    <!-- Bars -->
+    
+        <!-- GZIP-1 -->
+        <rect x="20" y="249.774" width="20" height="30.226000000000003" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="43" y="255.794" width="20" height="24.206" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="66" y="211.68" width="20" height="68.32" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="53" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-1</text>
+      
+        <!-- GZIP-6 -->
+        <rect x="108" y="268.366" width="20" height="11.633999999999999" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="131" y="268.702" width="20" height="11.298000000000002" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="154" y="200.34" width="20" height="79.66" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="141" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-6</text>
+      
+        <!-- GZIP-9 -->
+        <rect x="196" y="274.344" width="20" height="5.656" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="219" y="275.996" width="20" height="4.0040000000000004" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="242" y="201.04000000000002" width="20" height="78.96" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="229" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-9</text>
+      
+        <!-- ZSTD-3 -->
+        <rect x="284" y="203.28" width="20" height="76.72" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="307" y="216.72" width="20" height="63.28" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="330" y="56.70000000000002" width="20" height="223.29999999999998" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="317" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-3</text>
+      
+        <!-- ZSTD-10 -->
+        <rect x="372" y="268.744" width="20" height="11.256" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="395" y="268.8" width="20" height="11.200000000000001" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="418" y="47.74000000000001" width="20" height="232.26" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="405" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-10</text>
+      
+        <!-- ZSTD-19 -->
+        <rect x="460" y="279.72" width="20" height="0.28" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="483" y="279.734" width="20" height="0.266" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="506" y="80.08000000000001" width="20" height="199.92" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="493" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-19</text>
+      
+        <!-- LZMA-1 -->
+        <rect x="548" y="273.672" width="20" height="6.328" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="571" y="276.668" width="20" height="3.3320000000000003" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="594" y="253.82" width="20" height="26.18" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="581" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-1</text>
+      
+        <!-- LZMA-6 -->
+        <rect x="636" y="279.16" width="20" height="0.84" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="659" y="279.356" width="20" height="0.644" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="682" y="255.08" width="20" height="24.919999999999998" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="669" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-6</text>
+      
+        <!-- LZMA-9 -->
+        <rect x="724" y="279.468" width="20" height="0.532" rx="2" fill="#388bfd" opacity="0.9"/>
+        <rect x="747" y="279.44" width="20" height="0.56" rx="2" fill="#d29922" opacity="0.9"/>
+        <rect x="770" y="256.06" width="20" height="23.94" rx="2" fill="#2ea043" opacity="0.9"/>
+        <text x="757" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-9</text>
+      
+  </g>
+
+  <!-- Note -->
+  <text x="480" y="445" text-anchor="middle" fill="#8b949e" font-size="11">ZSTD achieves ultra-fast decompression (1.43–1.98 GB/s), making telemetry immediately searchable upon retrieval.</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <text x="480" y="38" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="700">Fig. 7: Estimated Monthly Storage Cost for 1,000 GiB</text>
+  <text x="480" y="60" text-anchor="middle" fill="#8b949e" font-size="12">Telemetry Storage Rate: $0.50 per GiB-month | Baseline Uncompressed: $500.00 / Month ($6,000 / Year)</text>
+
+  <!-- Legend -->
+  <g transform="translate(620, 85)">
+    <line x1="0" y1="6" x2="30" y2="6" stroke="#f85149" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="36" y="10" fill="#f85149" font-size="11" font-weight="700">Uncompressed ($500)</text>
+    <rect x="180" y="0" width="14" height="12" rx="2" fill="#388bfd"/>
+    <text x="200" y="10" fill="#c9d1d9" font-size="11">Logs Cost</text>
+    <rect x="270" y="0" width="14" height="12" rx="2" fill="#d29922"/>
+    <text x="290" y="10" fill="#c9d1d9" font-size="11">Activity Cost</text>
+  </g>
+
+  <!-- Chart Area -->
+  <g transform="translate(70, 110)">
+    <!-- 500 baseline dashed line -->
+    <line x1="0" y1="0" x2="820" y2="0" stroke="#f85149" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="-12" y="4" text-anchor="end" fill="#f85149" font-size="11" font-weight="700">$500</text>
+
+    <!-- Grid lines -->
+    <line x1="0" y1="70" x2="820" y2="70" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="74" text-anchor="end" fill="#8b949e" font-size="11">$375</text>
+
+    <line x1="0" y1="140" x2="820" y2="140" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="144" text-anchor="end" fill="#8b949e" font-size="11">$250</text>
+
+    <line x1="0" y1="210" x2="820" y2="210" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="214" text-anchor="end" fill="#8b949e" font-size="11">$125</text>
+
+    <line x1="0" y1="280" x2="820" y2="280" stroke="#8b949e" stroke-width="1.5"/>
+    <text x="-12" y="284" text-anchor="end" fill="#8b949e" font-size="11">$0</text>
+    <text x="-40" y="140" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="600" transform="rotate(-90, -40, 140)">Monthly Cost (USD/month)</text>
+
+    <!-- Bars -->
+    
+        <!-- GZIP-1 -->
+        <rect x="30" y="243.3032" width="30" height="36.6968" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="45" y="237.3032" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$66</text>
+        <rect x="64" y="223.32240000000002" width="30" height="56.6776" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="79" y="217.32240000000002" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$101</text>
+        <text x="62" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-1</text>
+      
+        <!-- GZIP-6 -->
+        <rect x="116" y="250.6784" width="30" height="29.321599999999997" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="131" y="244.6784" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$52</text>
+        <rect x="150" y="232.54" width="30" height="47.46" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="165" y="226.54" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$85</text>
+        <text x="148" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-6</text>
+      
+        <!-- GZIP-9 -->
+        <rect x="202" y="251.972" width="30" height="28.028" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="217" y="245.972" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$50</text>
+        <rect x="236" y="233.9456" width="30" height="46.054399999999994" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="251" y="227.9456" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$82</text>
+        <text x="234" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-9</text>
+      
+        <!-- ZSTD-3 -->
+        <rect x="288" y="251.888" width="30" height="28.112000000000002" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="303" y="245.888" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$50</text>
+        <rect x="322" y="233.0216" width="30" height="46.9784" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="337" y="227.0216" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$84</text>
+        <text x="320" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-3</text>
+      
+        <!-- ZSTD-10 -->
+        <rect x="374" y="256.5864" width="30" height="23.4136" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="389" y="250.58640000000003" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$42</text>
+        <rect x="408" y="237.8936" width="30" height="42.106399999999994" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="423" y="231.8936" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$75</text>
+        <text x="406" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-10</text>
+      
+        <!-- ZSTD-19 -->
+        <rect x="460" y="259.1064" width="30" height="20.893600000000003" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="475" y="253.1064" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$37</text>
+        <rect x="494" y="241.2704" width="30" height="38.7296" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="509" y="235.2704" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$69</text>
+        <text x="492" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-19</text>
+      
+        <!-- LZMA-1 -->
+        <rect x="546" y="256.0656" width="30" height="23.9344" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="561" y="250.06560000000002" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$43</text>
+        <rect x="580" y="232.1368" width="30" height="47.8632" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="595" y="226.1368" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$85</text>
+        <text x="578" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-1</text>
+      
+        <!-- LZMA-6 -->
+        <rect x="632" y="259.4144" width="30" height="20.5856" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="647" y="253.4144" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$37</text>
+        <rect x="666" y="241.0016" width="30" height="38.998400000000004" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="681" y="235.0016" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$70</text>
+        <text x="664" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-6</text>
+      
+        <!-- LZMA-9 -->
+        <rect x="718" y="259.4144" width="30" height="20.5856" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="733" y="253.4144" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">$37</text>
+        <rect x="752" y="241.0016" width="30" height="38.998400000000004" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="767" y="235.0016" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">$70</text>
+        <text x="750" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-9</text>
+      
+  </g>
+
+  <!-- Note -->
+  <text x="480" y="445" text-anchor="middle" fill="#8b949e" font-size="11">Annual storage savings exceed $5,550/year per 1,000 GiB under ZSTD-19 and LZMA-6/9 (from $6,000/yr down to ~$441/yr).</text>
+</svg>

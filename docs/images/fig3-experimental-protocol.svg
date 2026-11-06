@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#58a6ff"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#58a6ff" font-size="18" font-weight="700">Fig. 3: Standalone Experimental Benchmarking Protocol</text>
+  <text x="480" y="58" text-anchor="middle" fill="#8b949e" font-size="12">Repeated per-category evaluation of 9 codec-level combinations with round-trip verification</text>
+
+  <!-- 6 Boxes across the row -->
+  <g transform="translate(30, 95)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="130" height="100" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+    <text x="65" y="32" text-anchor="middle" fill="#79c0ff" font-size="12" font-weight="700">Benchmark Corpus</text>
+    <text x="65" y="52" text-anchor="middle" fill="#e6edf3" font-size="11">16 Loghub Logs</text>
+    <text x="65" y="70" text-anchor="middle" fill="#e6edf3" font-size="11">+ 8 Activity Files</text>
+    <text x="65" y="88" text-anchor="middle" fill="#8b949e" font-size="10">24 files (16.97 MB)</text>
+
+    <line x1="130" y1="50" x2="155" y2="50" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow3)"/>
+
+    <!-- Box 2 -->
+    <rect x="160" y="0" width="125" height="100" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="222" y="35" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="700">Repeated Runs</text>
+    <text x="222" y="58" text-anchor="middle" fill="#f0883e" font-size="12" font-weight="600">r = 10 Repetitions</text>
+    <text x="222" y="78" text-anchor="middle" fill="#8b949e" font-size="10">(1 warm-up discarded)</text>
+
+    <line x1="285" y1="50" x2="310" y2="50" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow3)"/>
+
+    <!-- Box 3 -->
+    <rect x="315" y="0" width="135" height="100" rx="8" fill="#1f1833" stroke="#a371f7"/>
+    <text x="382" y="30" text-anchor="middle" fill="#d2a8ff" font-size="12" font-weight="700">Codec × Level Grid</text>
+    <text x="382" y="50" text-anchor="middle" fill="#e6edf3" font-size="11">GZIP (1, 6, 9)</text>
+    <text x="382" y="68" text-anchor="middle" fill="#e6edf3" font-size="11">ZSTD (3, 10, 19)</text>
+    <text x="382" y="86" text-anchor="middle" fill="#e6edf3" font-size="11">LZMA (1, 6, 9)</text>
+
+    <line x1="450" y1="50" x2="475" y2="50" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow3)"/>
+
+    <!-- Box 4 -->
+    <rect x="480" y="0" width="130" height="100" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="545" y="32" text-anchor="middle" fill="#e6edf3" font-size="12" font-weight="700">Metrics Recorded</text>
+    <text x="545" y="54" text-anchor="middle" fill="#79c0ff" font-size="11">So, Sc (bytes)</text>
+    <text x="545" y="72" text-anchor="middle" fill="#79c0ff" font-size="11">Tc, Td (seconds)</text>
+    <text x="545" y="88" text-anchor="middle" fill="#8b949e" font-size="10">time.perf_counter()</text>
+
+    <line x1="610" y1="50" x2="635" y2="50" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow3)"/>
+
+    <!-- Box 5 -->
+    <rect x="640" y="0" width="125" height="100" rx="8" fill="#1a2e26" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="702" y="32" text-anchor="middle" fill="#56d364" font-size="12" font-weight="700">Round-Trip Check</text>
+    <text x="702" y="52" text-anchor="middle" fill="#e6edf3" font-size="11">SHA-256 Compare</text>
+    <text x="702" y="72" text-anchor="middle" fill="#3fb950" font-size="12" font-weight="700">216 / 216</text>
+    <text x="702" y="88" text-anchor="middle" fill="#3fb950" font-size="10">Zero Mismatches</text>
+
+    <line x1="765" y1="50" x2="790" y2="50" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow3)"/>
+
+    <!-- Box 6 -->
+    <rect x="795" y="0" width="115" height="100" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+    <text x="852" y="32" text-anchor="middle" fill="#79c0ff" font-size="12" font-weight="700">Aggregation</text>
+    <text x="852" y="52" text-anchor="middle" fill="#e6edf3" font-size="10">CR (agg) &amp; SS (%)</text>
+    <text x="852" y="70" text-anchor="middle" fill="#e6edf3" font-size="10">Throughput (MB/s)</text>
+    <text x="852" y="88" text-anchor="middle" fill="#8b949e" font-size="10">Wilcoxon &amp; t-test</text>
+  </g>
+
+  <!-- Note -->
+  <text x="480" y="235" text-anchor="middle" fill="#8b949e" font-size="11">Executed on Ubuntu 22.04 LTS (1 vCPU, 3.9 GiB RAM) using Python 3.10.12 with standard system codec binaries.</text>
+</svg>

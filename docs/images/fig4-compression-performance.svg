@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="700">Fig. 4: Aggregate Compression Ratio Across Codec Settings</text>
+  <text x="480" y="60" text-anchor="middle" fill="#8b949e" font-size="12">16 Public Loghub Logs (4.46 MB) vs. 8 Synthetic Activity Files (12.51 MB)</text>
+
+  <!-- Legend -->
+  <g transform="translate(680, 85)">
+    <rect x="0" y="0" width="16" height="12" rx="2" fill="#58a6ff"/>
+    <text x="24" y="11" fill="#c9d1d9" font-size="12">Cloud Logs</text>
+    <rect x="110" y="0" width="16" height="12" rx="2" fill="#f0883e"/>
+    <text x="134" y="11" fill="#c9d1d9" font-size="12">Activity Files</text>
+  </g>
+
+  <!-- Chart Area -->
+  <!-- Y-Axis labels (0 to 16) -->
+  <g transform="translate(70, 110)">
+    <!-- Grid lines -->
+    <line x1="0" y1="0" x2="820" y2="0" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="4" text-anchor="end" fill="#8b949e" font-size="11">16</text>
+
+    <line x1="0" y1="70" x2="820" y2="70" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="74" text-anchor="end" fill="#8b949e" font-size="11">12</text>
+
+    <line x1="0" y1="140" x2="820" y2="140" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="144" text-anchor="end" fill="#8b949e" font-size="11">8</text>
+
+    <line x1="0" y1="210" x2="820" y2="210" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-12" y="214" text-anchor="end" fill="#8b949e" font-size="11">4</text>
+
+    <line x1="0" y1="280" x2="820" y2="280" stroke="#8b949e" stroke-width="1.5"/>
+    <text x="-12" y="284" text-anchor="end" fill="#8b949e" font-size="11">0</text>
+    <text x="-40" y="140" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="600" transform="rotate(-90, -40, 140)">Aggregate Compression Ratio (CR)</text>
+
+    <!-- Bars -->
+    
+        <!-- GZIP-1 -->
+        <rect x="30" y="146.475" width="30" height="133.525" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="45" y="140.475" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">7.63</text>
+        <rect x="64" y="193.55" width="30" height="86.45" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="79" y="187.55" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">4.94</text>
+        <text x="62" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-1</text>
+      
+        <!-- GZIP-6 -->
+        <rect x="116" y="112.875" width="30" height="167.125" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="131" y="106.875" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">9.55</text>
+        <rect x="150" y="176.75" width="30" height="103.25" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="165" y="170.75" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">5.9</text>
+        <text x="148" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-6</text>
+      
+        <!-- GZIP-9 -->
+        <rect x="202" y="105.17499999999998" width="30" height="174.82500000000002" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="217" y="99.17499999999998" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">9.99</text>
+        <rect x="236" y="173.6" width="30" height="106.4" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="251" y="167.6" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">6.08</text>
+        <text x="234" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">GZIP-9</text>
+      
+        <!-- ZSTD-3 -->
+        <rect x="288" y="105.69999999999999" width="30" height="174.3" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="303" y="99.69999999999999" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">9.96</text>
+        <rect x="322" y="175.7" width="30" height="104.3" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="337" y="169.7" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">5.96</text>
+        <text x="320" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-3</text>
+      
+        <!-- ZSTD-10 -->
+        <rect x="374" y="70.69999999999999" width="30" height="209.3" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="389" y="64.69999999999999" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">11.96</text>
+        <rect x="408" y="163.625" width="30" height="116.375" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="423" y="157.625" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">6.65</text>
+        <text x="406" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-10</text>
+      
+        <!-- ZSTD-19 -->
+        <rect x="460" y="45.5" width="30" height="234.5" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="475" y="39.5" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">13.4</text>
+        <rect x="494" y="153.475" width="30" height="126.525" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="509" y="147.475" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">7.23</text>
+        <text x="492" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">ZSTD-19</text>
+      
+        <!-- LZMA-1 -->
+        <rect x="546" y="75.25" width="30" height="204.75" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="561" y="69.25" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">11.7</text>
+        <rect x="580" y="177.625" width="30" height="102.375" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="595" y="171.625" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">5.85</text>
+        <text x="578" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-1</text>
+      
+        <!-- LZMA-6 -->
+        <rect x="632" y="42" width="30" height="238" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="647" y="36" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">13.6</text>
+        <rect x="666" y="154.35000000000002" width="30" height="125.64999999999999" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="681" y="148.35000000000002" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">7.18</text>
+        <text x="664" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-6</text>
+      
+        <!-- LZMA-9 -->
+        <rect x="718" y="42" width="30" height="238" rx="3" fill="#388bfd" opacity="0.9"/>
+        <text x="733" y="36" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="700">13.6</text>
+        <rect x="752" y="154.35000000000002" width="30" height="125.64999999999999" rx="3" fill="#d29922" opacity="0.9"/>
+        <text x="767" y="148.35000000000002" text-anchor="middle" fill="#e3b341" font-size="10" font-weight="700">7.18</text>
+        <text x="750" y="302" text-anchor="middle" fill="#c9d1d9" font-size="11" font-weight="600">LZMA-9</text>
+      
+  </g>
+
+  <!-- Subtitle note -->
+  <text x="480" y="445" text-anchor="middle" fill="#8b949e" font-size="11">ZSTD-3 matches GZIP-9 in ratio (~9.96 vs ~9.99) while achieving 13.6× faster throughput (548 MB/s vs 40.4 MB/s).</text>
+</svg>

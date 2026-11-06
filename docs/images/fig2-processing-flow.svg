@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#3fb950"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="700">Fig. 2: Detailed End-to-End Processing Flow</text>
+  <text x="480" y="60" text-anchor="middle" fill="#8b949e" font-size="13">Mathematical Formalization: F → V → T → K → Π → C → M → Dr → I</text>
+
+  <!-- Row 1: Upload to Category -->
+  <!-- Box 1: File Upload -->
+  <rect x="50" y="100" width="130" height="60" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+  <text x="115" y="128" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">File Upload</text>
+  <text x="115" y="146" text-anchor="middle" fill="#79c0ff" font-size="11">F (Raw File)</text>
+
+  <!-- Arrow -->
+  <line x1="180" y1="130" x2="225" y2="130" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Validation -->
+  <rect x="230" y="100" width="130" height="60" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+  <text x="295" y="128" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Validation</text>
+  <text x="295" y="146" text-anchor="middle" fill="#79c0ff" font-size="11">V (Format Check)</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="130" x2="405" y2="130" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: File-Type Detection -->
+  <rect x="410" y="100" width="140" height="60" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+  <text x="480" y="128" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Type Detection</text>
+  <text x="480" y="146" text-anchor="middle" fill="#79c0ff" font-size="11">T (Ext + Sniffing)</text>
+
+  <!-- Arrow -->
+  <line x1="550" y1="130" x2="595" y2="130" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: Categorization -->
+  <rect x="600" y="100" width="140" height="60" rx="8" fill="#161b22" stroke="#388bfd" stroke-width="1.5"/>
+  <text x="670" y="128" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Categorization</text>
+  <text x="670" y="146" text-anchor="middle" fill="#79c0ff" font-size="11">K (Log / Activity)</text>
+
+  <!-- Branch connector down to Preprocessing -->
+  <path d="M 670 160 L 670 195 L 480 195 L 480 220" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: Category Preprocessing -->
+  <g transform="translate(100, 220)">
+    <!-- Log Preprocessing -->
+    <rect x="0" y="0" width="220" height="65" rx="8" fill="#1f1833" stroke="#a371f7" stroke-dasharray="4,4"/>
+    <text x="110" y="26" text-anchor="middle" fill="#d2a8ff" font-size="12" font-weight="700">Cloud Log File (Π)</text>
+    <text x="110" y="44" text-anchor="middle" fill="#8b949e" font-size="10">Textual Pattern Analysis</text>
+
+    <!-- Activity Preprocessing -->
+    <rect x="260" y="0" width="220" height="65" rx="8" fill="#1f1833" stroke="#a371f7" stroke-dasharray="4,4"/>
+    <text x="370" y="26" text-anchor="middle" fill="#d2a8ff" font-size="12" font-weight="700">Cloud Activity File (Π)</text>
+    <text x="370" y="44" text-anchor="middle" fill="#8b949e" font-size="10">Columnar / Schema Analysis</text>
+
+    <!-- Other -->
+    <rect x="520" y="0" width="220" height="65" rx="8" fill="#161b22" stroke="#8b949e" stroke-dasharray="4,4"/>
+    <text x="630" y="26" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="700">Other Supported File (Π)</text>
+    <text x="630" y="44" text-anchor="middle" fill="#8b949e" font-size="10">Identity (No category step)</text>
+  </g>
+
+  <!-- Path to Compression -->
+  <path d="M 480 285 L 480 320" fill="none" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: Compression -> Measurement -> Dashboard -> Decompression -> Verification -->
+  <g transform="translate(50, 325)">
+    <!-- Box: Compression -->
+    <rect x="0" y="0" width="150" height="65" rx="8" fill="#1c2518" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="75" y="28" text-anchor="middle" fill="#7ee787" font-size="13" font-weight="700">Compression (C)</text>
+    <text x="75" y="46" text-anchor="middle" fill="#8b949e" font-size="10">gzip / zstd / xz Codecs</text>
+
+    <line x1="150" y1="32" x2="185" y2="32" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Box: Measurement -->
+    <rect x="190" y="0" width="145" height="65" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="262" y="28" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Measurement (M)</text>
+    <text x="262" y="46" text-anchor="middle" fill="#8b949e" font-size="10">Sizes (Sc) &amp; Time (Tc)</text>
+
+    <line x1="335" y1="32" x2="370" y2="32" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Box: Dashboard -->
+    <rect x="375" y="0" width="145" height="65" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="447" y="28" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Results Dashboard</text>
+    <text x="447" y="46" text-anchor="middle" fill="#8b949e" font-size="10">CR, SS &amp; Cost Savings</text>
+
+    <line x1="520" y1="32" x2="555" y2="32" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Box: Decompression -->
+    <rect x="560" y="0" width="140" height="65" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="630" y="28" text-anchor="middle" fill="#e6edf3" font-size="13" font-weight="700">Decompress (Dr)</text>
+    <text x="630" y="46" text-anchor="middle" fill="#8b949e" font-size="10">Reconstruct Original File</text>
+
+    <line x1="700" y1="32" x2="735" y2="32" stroke="#3fb950" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+    <!-- Box: Integrity Check -->
+    <rect x="740" y="0" width="120" height="65" rx="8" fill="#1b4528" stroke="#3fb950" stroke-width="2"/>
+    <text x="800" y="26" text-anchor="middle" fill="#7ee787" font-size="12" font-weight="700">Integrity Check (I)</text>
+    <text x="800" y="42" text-anchor="middle" fill="#e6edf3" font-size="10">SHA-256 Digest</text>
+    <text x="800" y="56" text-anchor="middle" fill="#3fb950" font-size="10" font-weight="700">V = 1 (100% Exact)</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="480" y="445" text-anchor="middle" fill="#8b949e" font-size="12">Category-specific preprocessing is applied conditionally; verification is byte-exact without data loss.</text>
+</svg>

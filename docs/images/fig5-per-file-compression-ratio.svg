@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%" style="background:#0d1117; font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="700">Fig. 5: Per-File Compression Ratio on 16 Public Loghub Samples</text>
+  <text x="500" y="60" text-anchor="middle" fill="#8b949e" font-size="12">Comparison between GZIP-6 (balanced baseline), ZSTD-19 (deep compression), and LZMA-9 (maximum ratio)</text>
+
+  <!-- Legend -->
+  <g transform="translate(620, 85)">
+    <rect x="0" y="0" width="16" height="12" rx="2" fill="#58a6ff"/>
+    <text x="22" y="11" fill="#c9d1d9" font-size="12">GZIP-6</text>
+    <rect x="90" y="0" width="16" height="12" rx="2" fill="#f0883e"/>
+    <text x="112" y="11" fill="#c9d1d9" font-size="12">ZSTD-19</text>
+    <rect x="190" y="0" width="16" height="12" rx="2" fill="#a371f7"/>
+    <text x="212" y="11" fill="#c9d1d9" font-size="12">LZMA-9</text>
+  </g>
+
+  <!-- Chart Area -->
+  <g transform="translate(60, 110)">
+    <!-- Grid lines (0 to 35) -->
+    <line x1="0" y1="0" x2="900" y2="0" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-10" y="4" text-anchor="end" fill="#8b949e" font-size="11">35</text>
+
+    <line x1="0" y1="80" x2="900" y2="80" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-10" y="84" text-anchor="end" fill="#8b949e" font-size="11">25</text>
+
+    <line x1="0" y1="160" x2="900" y2="160" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-10" y="164" text-anchor="end" fill="#8b949e" font-size="11">15</text>
+
+    <line x1="0" y1="240" x2="900" y2="240" stroke="#30363d" stroke-dasharray="3,3"/>
+    <text x="-10" y="244" text-anchor="end" fill="#8b949e" font-size="11">5</text>
+
+    <line x1="0" y1="280" x2="900" y2="280" stroke="#8b949e" stroke-width="1.5"/>
+    <text x="-10" y="284" text-anchor="end" fill="#8b949e" font-size="11">0</text>
+    <text x="-40" y="140" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="600" transform="rotate(-90, -40, 140)">Compression Ratio (CR = So / Sc)</text>
+
+    <!-- 16 Bars grouped -->
+    
+        <!-- Android -->
+        <rect x="12" y="192.95999999999998" width="14" height="87.04" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="28" y="144.08" width="14" height="135.92" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="44" y="147.44" width="14" height="132.56" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="35" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 35, 302)">Android</text>
+      
+        <!-- Apache -->
+        <rect x="67" y="142.88" width="14" height="137.12" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="83" y="88.72" width="14" height="191.28" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="99" y="90.72" width="14" height="189.28" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="90" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 90, 302)">Apache</text>
+      
+        <!-- BGL -->
+        <rect x="122" y="235.76" width="14" height="44.24" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="138" y="221.84" width="14" height="58.16" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="154" y="216.24" width="14" height="63.76" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="145" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 145, 302)">BGL</text>
+      
+        <!-- HDFS -->
+        <rect x="177" y="238.24" width="14" height="41.76" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="193" y="226.24" width="14" height="53.76" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="209" y="226.16" width="14" height="53.84" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="200" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 200, 302)">HDFS</text>
+      
+        <!-- HPC -->
+        <rect x="232" y="234.72" width="14" height="45.28" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="248" y="218" width="14" height="62" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="264" y="216" width="14" height="64" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="255" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 255, 302)">HPC</text>
+      
+        <!-- Hadoop -->
+        <rect x="287" y="119.44" width="14" height="160.56" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="303" y="49.84" width="14" height="230.16" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="319" y="45.75999999999999" width="14" height="234.24" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="310" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 310, 302)">Hadoop</text>
+      
+        <!-- HealthApp -->
+        <rect x="342" y="197.6" width="14" height="82.4" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="358" y="167.68" width="14" height="112.32" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="374" y="167.28" width="14" height="112.72" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="365" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 365, 302)">HealthApp</text>
+      
+        <!-- Linux -->
+        <rect x="397" y="177.92000000000002" width="14" height="102.08" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="413" y="127.12000000000003" width="14" height="152.87999999999997" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="429" y="131.76" width="14" height="148.24" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="420" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 420, 302)">Linux</text>
+      
+        <!-- Mac -->
+        <rect x="452" y="234" width="14" height="46" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="468" y="209.6" width="14" height="70.4" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="484" y="206.4" width="14" height="73.6" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="475" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 475, 302)">Mac</text>
+      
+        <!-- OpenSSH -->
+        <rect x="507" y="170.24" width="14" height="109.76" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="523" y="114" width="14" height="166" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="539" y="127.84" width="14" height="152.16" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="530" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 530, 302)">OpenSSH</text>
+      
+        <!-- OpenStack -->
+        <rect x="562" y="194.56" width="14" height="85.44" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="578" y="163.04000000000002" width="14" height="116.96" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="594" y="166.56" width="14" height="113.44" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="585" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 585, 302)">OpenStack</text>
+      
+        <!-- Proxifier -->
+        <rect x="617" y="197.2" width="14" height="82.8" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="633" y="177.84" width="14" height="102.16" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="649" y="174.48000000000002" width="14" height="105.52" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="640" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 640, 302)">Proxifier</text>
+      
+        <!-- Spark -->
+        <rect x="672" y="170.48000000000002" width="14" height="109.52" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="688" y="121.44" width="14" height="158.56" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="704" y="121.84" width="14" height="158.16" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="695" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 695, 302)">Spark</text>
+      
+        <!-- T-Bird -->
+        <rect x="727" y="209.04000000000002" width="14" height="70.96" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="743" y="167.68" width="14" height="112.32" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="759" y="154.07999999999998" width="14" height="125.92" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="750" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 750, 302)">T-Bird</text>
+      
+        <!-- Windows -->
+        <rect x="782" y="122.96000000000001" width="14" height="157.04" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="798" y="29.840000000000003" width="14" height="250.16" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="814" y="41.91999999999999" width="14" height="238.08" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="805" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 805, 302)">Windows</text>
+      
+        <!-- Zookeeper -->
+        <rect x="837" y="176.32" width="14" height="103.68" rx="2" fill="#388bfd" opacity="0.85"/>
+        <rect x="853" y="145.12" width="14" height="134.88" rx="2" fill="#d29922" opacity="0.85"/>
+        <rect x="869" y="152.07999999999998" width="14" height="127.92" rx="2" fill="#8957e5" opacity="0.85"/>
+        <text x="860" y="302" text-anchor="end" fill="#c9d1d9" font-size="10" transform="rotate(-45, 860, 302)">Zookeeper</text>
+      
+  </g>
+
+  <!-- Note -->
+  <text x="500" y="475" text-anchor="middle" fill="#8b949e" font-size="11">Peak compression reaches 31.27:1 (Windows logs under ZSTD-19) and 29.28:1 (Hadoop logs under LZMA-9).</text>
+</svg>
